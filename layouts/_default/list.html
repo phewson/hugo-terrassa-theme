@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="content">
-	{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "posts") }}
+	{{ $paginator := .Paginate .Pages.ByDate.Reverse }}
 
 	{{ range $paginator.Pages }}
 	{{ .Render "card" }}
