@@ -16,15 +16,19 @@
         <p class="post__author author">By {{ $.Params.author }}.</p>
         {{ end }}
         {{ end }}
+        <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
     </header>
 
     {{ if ne .Type "page" }}
     <main class="post__body">
-        {{ .Content }}
+      {{ .Content }}
+      {{ partial "share-buttons.html" . }}
     </main>
     {{ else }}
     <main class="post__body" style="margin-bottom: 3rem;">
-        {{ .Content }}
+      {{ .Content }}
     </main>
     {{ end }}
 
