@@ -35,7 +35,7 @@ text-align: center;
   <div class="facebook" title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u={{ $pageurl }}');">
      {{ partial "svg/facebook.svg" (dict "class" "widget-social__link-icon") }}
   </div>
-  <div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?url={{ .Permalink }}&amp;text={{ .Title }}');">
+  <div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?url={{ $pageurl }}&amp;text={{ .Title }}');">
      {{ partial "svg/twitter.svg" (dict "class" "widget-social__link-icon") }}
   </div>
   <div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/sharing/share-offsite?url={{ $pageurl }}');">

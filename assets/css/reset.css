@@ -177,3 +177,4 @@ table, td, tr, th {
 :focus:not(:focus-visible) {
     outline: none;
 }
+
